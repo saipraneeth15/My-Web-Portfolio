@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Experiences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("edubg.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: whitesmoke;
+            color: #000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 80px auto 50px auto; /* Adjusted margin for fixed navbar */
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #000;
+        }
+        .internship {
+            margin-bottom: 20px;
+            border-left: 5px solid #00796b;
+            padding-left: 10px;
+            background-color: #e0f2f1;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .internship h2 {
+            font-size: 1.5em;
+            color: #004d40;
+            margin-bottom: 10px;
+        }
+        .internship p {
+            font-size: 1.1em;
+            color: #00796b;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .internship h2 {
+                font-size: 1.3em;
+            }
+            .internship p {
+                font-size: 1em;
+            }
+            .navbar a {
+                font-size: 1em;
+            }
+        }
+        .nav-links{
+            margin-right: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Professional Experience</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>My Internship Experience</h1>
+        </div>
+        <div class="internship">
+            <h2>Machine Learning With Python At Edugene Technologies Pvt.Ltd</h2>
+            <p><strong>Duration:</strong> 09/2020 – 11/2020 | Remote</p>
+            <p><strong>Role:</strong> Intern</p>
+        </div>
+        <div class="internship">
+            <h2>Salesforce Developer At Salesforce</h2>
+            <p><strong>Duration:</strong> 05/2023 – 06/2023 | Remote</p>
+            <p><strong>Role:</strong> Intern</p>
+        </div>
+    </div>
+</body>
+</html>

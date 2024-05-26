@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        .basic {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 15px;
+            margin-left: 250px;
+            margin-top: 15px; /* Initial margin for larger screens */
+        }
+        img {
+            height: 250px;
+            border-style: dashed;
+        }
+        .card {
+            border: 2px solid black;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        body {
+            background-image: url(edubg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0; /* Remove default body margin */
+        }
+        .navbar1 {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Ensure navbar is on top */
+        }
+        .content-wrapper {
+            margin-top: 70px; /* Adjust based on navbar height */
+        }
+        @media (max-width: 1200px) {
+            .basic {
+                margin-left: 0;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                padding: 0 15px;
+            }
+            img {
+                height: auto;
+            }
+        }
+        @media (max-width: 768px) {
+            .basic {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 10px;
+                padding: 0 15px;
+            }
+            .card {
+                margin: 0 auto;
+                width: 100%;
+            }
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+        @media (max-width: 576px) {
+            .basic {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 5px;
+                margin: 0 10px;
+                margin-top: 0; /* Reset margin-top for small screens */
+            }
+            .card {
+                margin: 0 auto;
+                width: 100%;
+            }
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        #hme {
+            margin-right: 5px;
+            border: 1px solid black;
+        }
+        .navbar {
+            background-color: whitesmoke;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar .nav-item a {
+            color: black;
+        }
+        
+        #hm {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i>Certifications</i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" id="hm">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content-wrapper">
+        <div class="basic">
+            <div class="card" style="width: 18rem;">
+                <a href="https://drive.google.com/file/d/1OYFixV4GWJ9Zp3ZVXasEFfRGzw28WFPy/view?usp=drive_link"><img src="./java2.png" class="card-img-top" alt="java"></a>
+                <div class="card-body">
+                    <p class="card-text">Certified in <b>java</b> by Infosys Springboard</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <a href="https://drive.google.com/file/d/15GsFYDGRn1Tqoeo9Z0OxLKlKKIsWg8Pb/view?usp=drive_link"><img src="./pyy.png" class="card-img-top" alt="Python"></a>
+                <div class="card-body">
+                    <p class="card-text">Certified in <b>Python</b> by coursera</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <a href="https://drive.google.com/file/d/12sn6bMk16K60SElirMlU1hxqDRb_OjUO/view?usp=drive_link"><img src="./da.jpeg" class="card-img-top" alt="Data Analytics"></a>
+                <div class="card-body">
+                    <p class="card-text">Certified in Google <b>Data Analytics</b> by Cousera</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <a href="sparkAR (1).pdf"><img src="./sp.jpeg" class="card-img-top" alt="SparkAR effect"></a>
+                <div class="card-body">
+                    <p class="card-text">Certified in <b>SparkAR</b> in which it provides a studio to create amazing Filters</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
